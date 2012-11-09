@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
-import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -127,7 +126,6 @@ public class Curves extends Applet implements Runnable, MouseListener, KeyListen
 		}
 		bufferGraphics.drawString("Length: "+length, width/2-20, 20);
 		g.drawImage(buffer, 0, 0, this);
-		Toolkit.getDefaultToolkit().sync();
 	}
 	public void update(Graphics g)
     {
